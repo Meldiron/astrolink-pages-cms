@@ -7,6 +7,12 @@ content:
         type: string
       - name: profession
         type: string
+      - name: links
+        type: object
+        list: true
+        fields:
+         - name: title
+           type: string
   - name: links
     path: src/data/user.json
     type: file
