@@ -1,5 +1,6 @@
 content:
   - name: user
+    label: User
     path: src/data/user.json
     type: file
     fields:
