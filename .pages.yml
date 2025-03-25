@@ -1,5 +1,5 @@
 content:
-  - name: header
+  - name: user
     path: src/data/user.json
     type: file
     fields:
@@ -13,18 +13,11 @@ content:
         fields:
          - name: title
            type: string
-  - name: links
-    path: src/data/user.json
-    type: file
-    list: true
-    fields:
-      - name: title
-        type: string
-      - name: description
-        type: string
-      - name: icon
-        description: Icon names can be found at www.remixicon.com
-        type: string
-      - name: url
-        type: string
-        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+         - name: description
+           type: string
+         - name: icon
+           description: Icon names can be found at www.remixicon.com
+           type: string
+         - name: url
+           type: string
+           pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
