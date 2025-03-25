@@ -6,14 +6,10 @@ content:
     fields:
       - name: name
         label: Full name
-        type: text
-        options:
-          rows: 1
+        type: string
       - name: profession
         label: Profession (tagline)
-        type: text
-        options:
-          rows: 1
+        type: string
   - name: links
     label: Links
     path: src/data/user.json
