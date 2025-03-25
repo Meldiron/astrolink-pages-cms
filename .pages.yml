@@ -1,22 +1,24 @@
 content:
   - name: header
-    label: Header
     path: src/data/user.json
     type: file
     fields:
       - name: name
-        label: Full name
         type: string
       - name: profession
-        label: Profession (tagline)
         type: string
   - name: links
-    label: Links
     path: src/data/user.json
     type: file
     list: true
     fields:
+      - name: title
+        type: string
+      - name: description
+        type: string
+      - name: icon
+        description: Icon names can be found at www.remixicon.com
+        type: string
       - name: url
-        label: Target URL
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
