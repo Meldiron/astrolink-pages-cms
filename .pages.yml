@@ -1,41 +1,26 @@
 content:
-  - name: posts
-    label: Posts
-    type: collection
-    path: 'src/posts'
-    view:
-      fields: [ title, published, date ]
-    fields:
-      - name: published
-        label: Published
-        type: boolean
-        default: true
-      - name: date
-        label: Date
-        type: date
-      - name: title
-        label: Title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
   - name: header
-    label: Header (Personal info)
+    label: Header (personal info)
     path: src/data/user.json
     type: file
     fields:
-      - name: title
-        label: Website title
-        type: string
-      - name: description
-        label: Website description
-        type: string
-        description: Will be provused for any page with no description.
+      - name: name
+        label: Full name
+        type: text
+        options:
+          rows: 1
+      - name: profession
+        label: Profession (tagline)
+        type: text
+        options:
+          rows: 1
+  - name: links
+    label: Links
+    path: src/data/user.json
+    type: file
+    list: true
+    fields:
       - name: url
-        label: Website URL
+        label: Target URL
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
-      - name: cover
-        label: Preview image
-        type: image
-        description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
