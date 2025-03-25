@@ -1,6 +1,6 @@
 content:
   - name: header
-    label: Header (personal info)
+    label: Header
     path: src/data/user.json
     type: file
     fields:
